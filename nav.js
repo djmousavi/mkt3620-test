@@ -2,7 +2,7 @@
 const navData = {
     primaryLinks: [
         { title: "Home", url: "index.html" },
-        { title: "About Us", url: "about.html" },
+        { title: "Products", url: "products.html" },
         { title: "Services", url: "services.html" },
         { title: "Contact", url: "contact.html" }
     ],
