@@ -3,131 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aero GT - Ultimate Performance EV</title>
+    <title>Products - Aero Motors</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header / Navigation -->
-    <header class="navbar">
-        <div class="container logo-container">
-            <a href="#" class="logo">AERO<span>MOTORS</span></a>
-            <nav>
-                <a href="#overview">Overview</a>
-                <a href="#specs">Specs</a>
-                <a href="#features">Features</a>
-                <a href="#order" class="btn btn-secondary">Reserve Now</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <h1>Aero GT</h1>
-            <p class="tagline">Pure Performance. Zero Compromise.</p>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-value">1.9s</span>
-                    <span class="stat-label">0-60 mph</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-value">420 mi</span>
-                    <span class="stat-label">Est. Range</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-value">1,020 hp</span>
-                    <span class="stat-label">Peak Power</span>
-                </div>
+    <div class="site-wrapper">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">
+                <h1>AERO MOTORS</h1>
             </div>
-            <div class="hero-actions">
-                <a href="#order" class="btn btn-primary">Order Yours</a>
-                <a href="#specs" class="btn btn-outline">Explore Specs</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery / Overview Section -->
-    <section id="overview" class="overview container">
-        <h2>Designed to Lead</h2>
-        <p class="section-desc">Engineered with precision aerodynamics, luxury materials, and cutting-edge electric performance.</p>
-        
-        <div class="gallery">
-            <div class="gallery-main">
-                <img id="featured-img" src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1200&q=80" alt="Aero GT Exterior">
-            </div>
-            <div class="gallery-thumbs">
-                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=400&q=80" class="thumb active" onclick="changeImage(this.src)" alt="Front View">
-                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400&q=80" class="thumb" onclick="changeImage(this.src)" alt="Side Profile">
-                <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=400&q=80" class="thumb" onclick="changeImage(this.src)" alt="Interior View">
-            </div>
-        </div>
-    </section>
-
-    <!-- Key Features -->
-    <section id="features" class="features-section">
-        <div class="container">
-            <h2>Engineered For Excellence</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>Tri-Motor AWD</h3>
-                    <p>Independent torque vectoring controls power to each wheel for supreme traction and cornering dynamics.</p>
+            <div class="header-right">
+                <div class="info-graphics">
+                    Cutting-edge electric vehicles engineered for performance
                 </div>
-                <div class="feature-card">
-                    <h3>Ultra-Fast Charging</h3>
-                    <p>Gain up to 200 miles of range in just 15 minutes at high-speed charging stations.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Autonomous Tech</h3>
-                    <p>Next-generation lidar, radar, and vision sensors enable seamless highway and urban navigation support.</p>
-                </div>
+                <!-- Dynamic Navigation loaded via JS -->
+                <nav id="top-nav-container"></nav>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Technical Specifications -->
-    <section id="specs" class="specs-section container">
-        <h2>Technical Specifications</h2>
-        <div class="specs-table">
-            <div class="spec-row"><span class="spec-name">Drivetrain</span><span class="spec-val">Tri-Motor All-Wheel Drive</span></div>
-            <div class="spec-row"><span class="spec-name">Top Speed</span><span class="spec-val">200 mph</span></div>
-            <div class="spec-row"><span class="spec-name">Battery Capacity</span><span class="spec-val">100 kWh</span></div>
-            <div class="spec-row"><span class="spec-name">Charging Speed</span><span class="spec-val">350 kW DC Fast Charging</span></div>
-            <div class="spec-row"><span class="spec-name">Seating</span><span class="spec-val">5 Adults</span></div>
-            <div class="spec-row"><span class="spec-name">Curb Weight</span><span class="spec-val">4,820 lbs</span></div>
-        </div>
-    </section>
+        <!-- Main Grid Section -->
+        <div class="main-body">
+            <!-- Side Navigation loaded via JS -->
+            <aside class="sidebar-left">
+                <nav id="side-nav-container"></nav>
+            </aside>
 
-    <!-- Order / Call to Action -->
-    <section id="order" class="cta-section">
-        <div class="container">
-            <h2>Experience the Future Today</h2>
-            <p>Starting at <strong>$89,900</strong>. Fully refundable deposit.</p>
-            <form class="order-form" onsubmit="event.preventDefault(); alert('Reservation submitted successfully!');">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit" class="btn btn-primary">Reserve Now</button>
-            </form>
-        </div>
-    </section>
+            <!-- Main Content Area -->
+            <main class="content-area">
+                <div class="hero-image">
+                    <h2>Our Product Line</h2>
+                </div>
+                <section class="main-text">
+                    <h1>Aero GT - Ultimate Performance EV</h1>
+                    <p>Experience the future of electric vehicles with the Aero GT. Engineered with precision aerodynamics, luxury materials, and cutting-edge electric performance, the Aero GT delivers an uncompromising driving experience. With a tri-motor all-wheel drive system, the Aero GT accelerates from 0-60 mph in just 1.9 seconds and reaches a top speed of 200 mph. The 100 kWh battery provides an estimated range of 420 miles on a single charge, and the 350 kW DC fast charging system allows you to gain up to 200 miles of range in just 15 minutes at high-speed charging stations. Next-generation lidar, radar, and vision sensors enable seamless highway and urban navigation support, putting you at the forefront of autonomous driving technology.</p>
+                    
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li><strong>Tri-Motor AWD:</strong> Independent torque vectoring controls power to each wheel for supreme traction and cornering dynamics.</li>
+                        <li><strong>Ultra-Fast Charging:</strong> Gain up to 200 miles of range in just 15 minutes at high-speed charging stations.</li>
+                        <li><strong>Autonomous Tech:</strong> Next-generation lidar, radar, and vision sensors enable seamless highway and urban navigation support.</li>
+                    </ul>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <p>&copy; 2026 Aero Motors Inc. Hosted on GitHub Pages.</p>
-        </div>
-    </footer>
+                    <h3>Technical Specifications:</h3>
+                    <ul>
+                        <li>Drivetrain: Tri-Motor All-Wheel Drive</li>
+                        <li>Top Speed: 200 mph</li>
+                        <li>0-60 mph: 1.9 seconds</li>
+                        <li>Battery Capacity: 100 kWh</li>
+                        <li>Estimated Range: 420 miles</li>
+                        <li>Charging Speed: 350 kW DC Fast Charging</li>
+                        <li>Peak Power: 1,020 hp</li>
+                        <li>Seating: 5 Adults</li>
+                        <li>Curb Weight: 4,820 lbs</li>
+                    </ul>
 
-    <script>
-        function changeImage(src) {
-            document.getElementById('featured-img').src = src;
-            document.querySelectorAll('.thumb').forEach(thumb => {
-                thumb.classList.remove('active');
-                if (thumb.src === src) thumb.classList.add('active');
-            });
-        }
-    </script>
+                    <h3>Pricing:</h3>
+                    <p>Starting at <strong>$89,900</strong> with a fully refundable deposit. Reserve your Aero GT today and experience the future of electric performance.</p>
+                </section>
+            </main>
+
+            <!-- Sticky Sidebar Right -->
+            <aside class="sidebar-right">
+                <div class="sticky-content">
+                    <h3>Quick Info</h3>
+                    <ul>
+                        <li>0-60 mph: 1.9s</li>
+                        <li>Range: 420 miles</li>
+                        <li>Top Speed: 200 mph</li>
+                        <li>Peak Power: 1,020 hp</li>
+                        <li>Starting Price: $89,900</li>
+                    </ul>
+                    <h3>Reserve Now</h3>
+                    <p>Limited availability. Secure your reservation with a fully refundable deposit.</p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>&copy; 2026 Aero Motors Inc. | <a href="index.html">Home</a> | <a href="products.html">Products</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy</a></p>
+        </footer>
+    </div>
+
+    <!-- External JavaScript for Navigation -->
+    <script src="nav.js"></script>
 </body>
 </html>
