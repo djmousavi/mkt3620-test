@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aero GT - Ultimate Performance EV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="container logo-container">
+            <a href="#" class="logo">AERO<span>MOTORS</span></a>
+            <nav>
+                <a href="#overview">Overview</a>
+                <a href="#specs">Specs</a>
+                <a href="#features">Features</a>
+                <a href="#order" class="btn btn-secondary">Reserve Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Aero GT</h1>
+            <p class="tagline">Pure Performance. Zero Compromise.</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">1.9s</span>
+                    <span class="stat-label">0-60 mph</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">420 mi</span>
+                    <span class="stat-label">Est. Range</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">1,020 hp</span>
+                    <span class="stat-label">Peak Power</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="#order" class="btn btn-primary">Order Yours</a>
+                <a href="#specs" class="btn btn-outline">Explore Specs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Overview Section -->
+    <section id="overview" class="overview container">
+        <h2>Designed to Lead</h2>
+        <p class="section-desc">Engineered with precision aerodynamics, luxury materials, and cutting-edge electric performance.</p>
+        
+        <div class="gallery">
+            <div class="gallery-main">
+                <img id="featured-img" src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1200&q=80" alt="Aero GT Exterior">
+            </div>
+            <div class="gallery-thumbs">
+                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=400&q=80" class="thumb active" onclick="changeImage(this.src)" alt="Front View">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400&q=80" class="thumb" onclick="changeImage(this.src)" alt="Side Profile">
+                <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=400&q=80" class="thumb" onclick="changeImage(this.src)" alt="Interior View">
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Engineered For Excellence</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Tri-Motor AWD</h3>
+                    <p>Independent torque vectoring controls power to each wheel for supreme traction and cornering dynamics.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Ultra-Fast Charging</h3>
+                    <p>Gain up to 200 miles of range in just 15 minutes at high-speed charging stations.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Autonomous Tech</h3>
+                    <p>Next-generation lidar, radar, and vision sensors enable seamless highway and urban navigation support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section id="specs" class="specs-section container">
+        <h2>Technical Specifications</h2>
+        <div class="specs-table">
+            <div class="spec-row"><span class="spec-name">Drivetrain</span><span class="spec-val">Tri-Motor All-Wheel Drive</span></div>
+            <div class="spec-row"><span class="spec-name">Top Speed</span><span class="spec-val">200 mph</span></div>
+            <div class="spec-row"><span class="spec-name">Battery Capacity</span><span class="spec-val">100 kWh</span></div>
+            <div class="spec-row"><span class="spec-name">Charging Speed</span><span class="spec-val">350 kW DC Fast Charging</span></div>
+            <div class="spec-row"><span class="spec-name">Seating</span><span class="spec-val">5 Adults</span></div>
+            <div class="spec-row"><span class="spec-name">Curb Weight</span><span class="spec-val">4,820 lbs</span></div>
+        </div>
+    </section>
+
+    <!-- Order / Call to Action -->
+    <section id="order" class="cta-section">
+        <div class="container">
+            <h2>Experience the Future Today</h2>
+            <p>Starting at <strong>$89,900</strong>. Fully refundable deposit.</p>
+            <form class="order-form" onsubmit="event.preventDefault(); alert('Reservation submitted successfully!');">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Reserve Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Aero Motors Inc. Hosted on GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('featured-img').src = src;
+            document.querySelectorAll('.thumb').forEach(thumb => {
+                thumb.classList.remove('active');
+                if (thumb.src === src) thumb.classList.add('active');
+            });
+        }
+    </script>
+</body>
+</html>
